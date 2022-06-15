@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 const Cards = styled.div`
     background-color: ${prop => prop.color ? prop.color : '#fff'};
     width: ${prop => prop.width ? prop.width : '100%'};
@@ -9,24 +7,20 @@ const Cards = styled.div`
     border-radius: 10px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
     color: #fff;
     .icon {
+        display: flex;
         padding-top: 20px;
+        width: 100px;
+        text-align: center;
     }
-`
-
-const CardDetail = styled.div`
-    font-weight: bold;
-    display: flex;
-    font-size: 18px;
-    flex-direction: column;
-    padding-top: 20px;
-    span {
-        opacity: 0.5;
-        font-size: 12px;
+    .icon * {
+        margin: 0 auto;
     }
-`
-
+    @media (max-width: 1200px) {
+        width: 100%;
+        margin: 10px auto;
+    }
+`;
 
 export default Cards;

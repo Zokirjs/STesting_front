@@ -8,11 +8,11 @@ import CardDetail from '../styles/CardDetail'
 
 
 export default function App () {
-    return <div>
+    return <div className='cards'>
         
         <BgWhite width="80%">
             <Cards width="15%" color="#0bb783">
-                <MdGroup className='icon' size={40} color="#fff"/>
+                <MdGroup className='icon' size={"2rem"} color="#fff"/>
                 <CardDetail>
                     2,969,102
                     <span>
@@ -21,7 +21,7 @@ export default function App () {
                 </CardDetail>
             </Cards> 
             <Cards width="15%" color="#8e67fb">
-            <FaSchool className='icon' size={40} color="#fff"/>
+            <FaSchool className='icon' size={"2rem"} color="#fff"/>
                 <CardDetail>
                     7,749
                     <span>
@@ -30,7 +30,9 @@ export default function App () {
                 </CardDetail>
             </Cards> 
             <Cards width="15%" color="#4f95ff">
-            <FaClipboardList className='icon' size={40} color="#fff"/>
+            <div className="icon">
+            <FaClipboardList size={"2rem"} color="#fff"/>
+            </div>
                 <CardDetail>
                     1,449
                     <span>
@@ -39,7 +41,7 @@ export default function App () {
                 </CardDetail>
             </Cards>
             <Cards width="15%" color="#f4970a">
-            <FaClipboardList className='icon' size={40} color="#fff"/>
+            <FaClipboardList className='icon' size={"2rem"} color="#fff"/>
                 <CardDetail>
                     4,394,715
                     <span>
@@ -48,7 +50,7 @@ export default function App () {
                 </CardDetail>
             </Cards> 
             <Cards width="15%" color="#89b9c8">
-            <MdOutlineAccessTime className='icon' size={40} color="#fff"/>
+            <MdOutlineAccessTime className='icon' size={"2rem"} color="#fff"/>
                 <CardDetail>
                     79,042
                     <span>

@@ -4,9 +4,34 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-color: #f3f7fb;  
+  margin: 80px 200px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.chart {
+  width: 80%;
+}
+
+.heading {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    margin: 30px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .cards div {
+    display: block;
+  }
+  .cards div div {
+    display: flex;
+  }
 }

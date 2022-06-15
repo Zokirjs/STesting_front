@@ -10,6 +10,8 @@ const CardDetail = styled.div`
         opacity: 0.5;
         font-size: 12px;
     }
+    @media (max-width: 1200px) {
+    }
 `
 
 
